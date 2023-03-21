@@ -436,24 +436,64 @@
        
          <form class="modal-form form">
 
+          <div class="form-group">
            <label for="name" class="for-label">
              <span>Name</span> 
-             <input type="text" id="name" class="form-input" placeholder="" name="fullname" required>
+             <div class="form-control">
+             <input type="text"
+                    id="name"
+                    class="form-input"
+                    placeholder=""
+                    name="fullname"
+                    required>
+             <svg class="form-icon" width="12" height="12">
+               <use href="./images/icons.svg/sprite_symboldefs.svg#icon-name"></use>
+             </svg>
+            </div>
            </label>
+          </div>
 
+          <div class="form-group">
            <label for="phone" class="for-label">
-             <span>Phone</span> 
-             <input type="tel" id="phone" class="form-input" placeholder="" name="tel" required>
+             <span>Phone</span>
+             <div class="form-control">
+             <input type="tel"
+                    id="phone"
+                    class="form-input"
+                    placeholder=""
+                    name="tel"
+                    required>
+             <svg class="form-icon" width="13" height="13">
+               <use href="./images/icons.svg/sprite_symboldefs.svg#icon-phone"></use>
+             </svg>
+            </div>
            </label>
+          </div>
 
+          <div class="form-group">
            <label for="email" class="for-label">
-             <span>Email</span> 
-             <input type="email" id="email" class="form-input" placeholder="" name="email" required>
+             <span>Email</span>
+             <div class="form-control">
+             <input type="email"
+                    id="email"
+                    class="form-input"
+                    placeholder=""
+                    name="email"
+                    required>
+               <svg class="form-icon" width="15" height="12">
+                 <use href="./images/icons.svg/sprite_symboldefs.svg#icon-mail"></use>
+               </svg>
+            </div>      
            </label>
+          </div>
 
            <label for="comment" class="for-label">
              <span>Comment</span>
-             <input type="text" id="comment" class="form-input comment" placeholder="Text input" name="text">
+             <input type="text"
+                    id="comment"
+                    class="form-input comment"
+                    placeholder="Text input"
+                    name="text">
            </label>
 
           <button type="submit" class="hero-button btn hero-text-btn form-btn">Send</button>
