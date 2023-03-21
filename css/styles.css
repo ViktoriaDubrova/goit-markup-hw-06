@@ -710,7 +710,7 @@ margin-bottom: 16px;
     transform: translate(-50%, -50%);
 
     width: 408px;
-    height: 576px;
+    min-height: 576px;
     background-color: #FCFCFC;
 }
 
@@ -813,6 +813,7 @@ margin-bottom: 16px;
 }
 
 .for-label-policy {
+    display: flex;
     color: #8E8F99;
     letter-spacing: 0.04em;
     font-weight: 400;
@@ -820,6 +821,8 @@ margin-bottom: 16px;
     line-height: 14px;
     margin-bottom: 4px;
     align-items: center;
+    margin-top: 16px;
+    margin-bottom: 24px;
 }
 
 .for-label-policy::before {
