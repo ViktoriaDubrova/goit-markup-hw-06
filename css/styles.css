@@ -772,6 +772,15 @@ margin-bottom: 16px;
     border: 1px solid #2E2F42;
     border-radius: 4px;
     margin-bottom: 8px;
+    outline: transparent;
+}
+
+.form-input:focus {
+    color: var(--color-link);
+}
+
+.form-input:focus + .form-icon {
+    fill: var(--color-link);
 }
 
 .form-btn {
@@ -794,8 +803,10 @@ margin-bottom: 16px;
 }
 
 .comment {
+    display: block;
     width: 360px;
-    height: 120px;
+    min-height: 120px;
+    resize: none;
 }
 
 .for-label {
