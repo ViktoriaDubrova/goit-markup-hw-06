@@ -785,13 +785,15 @@ margin-bottom: 16px;
 }
 
 .form-btn {
-    
+
     width: 169px;
     height: 56px;
     background: var(--color-link);
 
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+
+    margin-left: 100px;
 }
 
 .form-input::placeholder {
@@ -835,5 +837,9 @@ margin-bottom: 16px;
 }
 
 .galka {
-    
+
+}
+
+.policy {
+    text-decoration: underline;
 }
