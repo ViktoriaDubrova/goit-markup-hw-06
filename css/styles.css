@@ -769,7 +769,7 @@ margin-bottom: 16px;
 .form-input {
     height: 40px;
     width: 100%;
-    border: 1px solid var(--color-link);
+    border: 1px solid #2E2F42;
     border-radius: 4px;
     margin-bottom: 8px;
 }
@@ -791,7 +791,6 @@ margin-bottom: 16px;
     font-size: 12px;
     line-height: 14px;
 
-
 }
 
 .comment {
@@ -805,4 +804,5 @@ margin-bottom: 16px;
     font-weight: 400;
     font-size: 12px;
     line-height: 14px;
+    margin-bottom: 4px;
 }
