@@ -758,13 +758,13 @@ margin-top: 48px;
 margin-bottom: 16px;
 }
 
-.modal-form {
+/* .modal-form {
 
 }
 
 .form {
 
-}
+} */
 
 .form-input {
     height: 40px;
@@ -819,6 +819,25 @@ margin-bottom: 16px;
     font-size: 12px;
     line-height: 14px;
     margin-bottom: 4px;
+    align-items: center;
+}
+
+.for-label-policy::before {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid var(--brand-color);
+    border-radius: 4px;
+    margin-right: 8px;
+}
+
+.form-check:checked + .for-label-policy::before {
+    background-color: var(--color-link);
+    border-color: var(--color-link);
+    background-image: url(../images/icons.svg/galka.svg);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .form-group {
@@ -836,10 +855,11 @@ margin-bottom: 16px;
     display: block;
 }
 
-.galka {
-
-}
-
 .policy {
     text-decoration: underline;
+}
+
+.form-check {
+    width: 16px;
+    height: 16px;
 }
