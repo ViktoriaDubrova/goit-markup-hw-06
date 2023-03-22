@@ -542,6 +542,34 @@ margin-bottom: 16px;
     gap: 120px; 
 }
 
+.for-label .subscribe-label {
+    width: 264px;
+    height: 40px;
+    background-color: var(--brand-color);
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+}
+
+.subscribe-label::placeholder {
+    color-scheme: var(--hero-title-text-color);
+}
+
+.subscribe-btn {
+    width: 165px;
+    height: 40px;
+}
+
+.subscribe-btn::after {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-color: var(--color-link);
+    margin-left: 16px;
+    background-image: url(../images/icons.svg/send.svg);
+    background-position: center;
+}
+
 /* ---  BTN SECTION  --- */
 .btn-section {
     padding-top: 96px;
