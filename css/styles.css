@@ -570,8 +570,8 @@ margin-bottom: 16px;
     display: inline-block;
     width: 24px;
     height: 24px;
-
     background-image: url(../images/icons.svg/send.svg);
+    background-size: contain;
 }
 
 /* ---  BTN SECTION  --- */
