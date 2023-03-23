@@ -423,21 +423,19 @@
 
       <div class="form-group subscribe-title">
         <h3 class="social-text footer-text">Subscribe</h3>
-        <label for="subscribe" class="for-label">
+        <div class="subscribe-container">
+         <label for="subscribe" class="for-label">
           <input type="text"
                  id="subscribe"
                  class="form-input subscribe-label"
                  placeholder="E-mail"
                  name="subscribe"
-                 required>
-         <button type="submit" class="btn hero-text-btn subscribe-btn">Subscribe</button>
-  
-        </label>
+                 required>                
+         </label>
+          <button type="submit" class="btn hero-text-btn subscribe-btn">Subscribe</button>
+        </div>
        </div>
-    <div>
 
-
-    </div>
 
   </div>
 </footer>
@@ -453,14 +451,12 @@
           </svg>
          </button>
 
-         <h3 class="modal-title">Leave your contacts and we will call you back</h3>
+         <p class="modal-title">Leave your contacts and we will call you back</p>
        
          <form class="modal-form form">
 
-          <div class="form-group">
            <label for="name" class="for-label">
-             <span>Name</span> 
-             <div class="form-control">
+             <span class="form-control">Name</span> 
              <input type="text"
                     id="name"
                     class="form-input"
@@ -470,14 +466,10 @@
              <svg class="form-icon" width="12" height="12">
                <use href="./images/icons.svg/sprite_symboldefs.svg#icon-name"></use>
              </svg>
-            </div>
            </label>
-          </div>
-
-          <div class="form-group">
+      
            <label for="phone" class="for-label">
-             <span>Phone</span>
-             <div class="form-control">
+             <span class="form-control">Phone</span>
              <input type="tel"
                     id="phone"
                     class="form-input"
@@ -487,14 +479,10 @@
              <svg class="form-icon" width="13" height="13">
                <use href="./images/icons.svg/sprite_symboldefs.svg#icon-phone"></use>
              </svg>
-            </div>
            </label>
-          </div>
 
-          <div class="form-group">
            <label for="email" class="for-label">
-             <span>Email</span>
-             <div class="form-control">
+             <span class="form-control">Email</span>
              <input type="email"
                     id="email"
                     class="form-input"
@@ -503,32 +491,26 @@
                     required>
                <svg class="form-icon" width="15" height="12">
                  <use href="./images/icons.svg/sprite_symboldefs.svg#icon-mail"></use>
-               </svg>
-            </div>      
+               </svg>   
            </label>
-          </div>
-
-          <div class="form-group">
-            <label for="comment" class="for-label">
-            <span>Comment</span>
-            <textarea name="comment"
-            class="form-input comment"
-            placeholder="Text input"></textarea>
-          </label>
-          </div> 
-
-          <div class="form-group">
+       
+           <label for="comment" class="for-label">
+             <span class="form-control">Comment</span>
+             <textarea name="comment"
+                       class="form-input comment"
+                       placeholder="Text input">
+             </textarea>
+           </label>
+      
             <input type="checkbox"
                    class="form-check visually-hidden"
                    id="policy"
                    name="policy">
-            <label for="policy" class="for-label-policy">
+             <label for="policy" class="for-label-policy">
               I accept the terms and conditions of the
                 <a href="#" class="policy">Privacy Policy</a>
-            </label>
-         </div>
-
-
+             </label>
+  
           <button type="submit" class="hero-button btn hero-text-btn form-btn">Send</button>
 
          </form>
