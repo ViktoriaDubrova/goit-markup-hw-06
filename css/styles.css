@@ -547,24 +547,28 @@ margin-bottom: 16px;
 }
 
 .subscribe-label {
-    
+    color: #FFFFFF;
+    resize: none;
+    padding: 0;
 }
 
-.subscribe-mail {
+.form-input .subscribe-label{
     color: var(--hero-title-text-color);
 }
+
 .subscribe-label::placeholder {
-    color-scheme: var(--hero-title-text-color);
+    print-color-adjust: var(--hero-title-text-color);
 }
 
 .subscribe-btn {
+    position: absolute;
     min-width: 165px;
     max-height: 40px;
     text-decoration: none;
     display: inline-flex;
     background-color: var(--color-link);
     align-items: center;
-    margin: 0;
+    margin-left: 24px;
 }
 
 .subscribe-btn::after {
@@ -580,6 +584,10 @@ margin-bottom: 16px;
     flex: auto;
 }
 /* ????? */
+
+.footer-label {
+    border-color: #FFFFFF;
+}
 
 /* ---  BTN SECTION  --- */
 .btn-section {
@@ -796,10 +804,12 @@ margin-bottom: 16px;
 }
 
 .for-label {
+    position: relative;
     margin-bottom: 8px;
 }
 
 .form-control {
+    position: relative;
     font-weight: 400;
     font-size: 12px;
     line-height: 14px;
@@ -810,7 +820,7 @@ margin-bottom: 16px;
 .form-input {
     height: 40px;
     width: 100%;
-    border: 1px solid #2E2F42;
+    border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     outline: transparent;
     padding-left: 38px;
@@ -851,6 +861,8 @@ margin-bottom: 16px;
     width: 360px;
     min-height: 120px;
     resize: none;
+    padding-top: 8px;
+    padding-left: 16px;
 }
 
 .for-label-policy {
@@ -886,9 +898,10 @@ margin-bottom: 16px;
 
 .form-icon {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 19px;
     fill: currentColor;
+    transition: fill var(--transition-duration);
 }
 
 .accept {
