@@ -570,6 +570,7 @@ margin-bottom: 16px;
     background-color: var(--color-link);
     align-items: center;
     margin-left: 24px;
+    gap: 24px;
 }
 
 .subscribe-btn::after {
@@ -582,12 +583,13 @@ margin-bottom: 16px;
 }
 
 .subscribe-container {
-    flex: auto;
+    display: flex;
 }
 /* ????? */
 
 .footer-label {
     border-color: #FFFFFF;
+    margin: 0;
 }
 
 /* ---  BTN SECTION  --- */
@@ -797,25 +799,28 @@ margin-bottom: 16px;
 
 .modal-title {
     font-weight: 500;
-font-size: 16px;
-line-height: 24px;
-text-align: center;
-letter-spacing: 0.02em;
-margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    margin-bottom: 16px;
 }
 
 .for-label {
+    display: block;
     position: relative;
-    margin-bottom: 8px;
+    margin: 0;
 }
 
 .form-control {
+    display: block;
     position: relative;
     font-weight: 400;
     font-size: 12px;
-    line-height: 14px;
+    line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8E8F99;
+    margin-bottom: 4px;
 }
 
 .form-input {
@@ -825,7 +830,12 @@ margin-bottom: 16px;
     border-radius: 4px;
     outline: transparent;
     padding-left: 38px;
-    transition: border var(--transition-duration) ;
+    transition: border var(--transition-duration);
+    transition: color var(--transition-duration);
+}
+
+.form-input:focus + .form-icon {
+    color: var(--color-link);
 }
 
 .form-input:focus {
@@ -887,6 +897,8 @@ margin-bottom: 16px;
     border: 2px solid var(--brand-color);
     border-radius: 4px;
     margin-right: 8px;
+    transition: background-color var(--transition-duration), 
+                border-color var(--transition-duration);
 }
 
 .form-check:checked + .for-label-policy::before {
@@ -899,7 +911,7 @@ margin-bottom: 16px;
 
 .form-icon {
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 19px;
     fill: currentColor;
     transition: fill var(--transition-duration);
@@ -913,7 +925,7 @@ margin-bottom: 16px;
     text-decoration: underline;
 }
 
-.form-check {
+/* .form-check {
     width: 16px;
     height: 16px;
-}
+} */
