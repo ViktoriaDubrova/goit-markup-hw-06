@@ -537,6 +537,13 @@ margin-bottom: 16px;
     gap: 120px; 
 }
 
+.form-group {
+    position: inherit;
+    Width: 453px;
+    Height: 80px;
+    outline: 2px solid salmon;
+}
+
 .for-label .subscribe-label {
     width: 264px;
     height: 40px;
@@ -569,8 +576,7 @@ margin-bottom: 16px;
     display: inline-flex;
     background-color: var(--color-link);
     align-items: center;
-    margin-left: 24px;
-    gap: 24px;
+    margin-left: 288px;
 }
 
 .subscribe-btn::after {
@@ -583,7 +589,10 @@ margin-bottom: 16px;
 }
 
 .subscribe-container {
+
     display: flex;
+
+    outline: 2px solid yellow;
 }
 /* ????? */
 
