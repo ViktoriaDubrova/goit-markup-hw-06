@@ -541,7 +541,7 @@ margin-bottom: 16px;
     position: inherit;
     Width: 453px;
     Height: 80px;
-    outline: 2px solid salmon;
+    /* outline: 2px solid salmon; */
 }
 
 .for-label .subscribe-label {
@@ -592,7 +592,7 @@ margin-bottom: 16px;
 
     display: flex;
 
-    outline: 2px solid yellow;
+    /* outline: 2px solid yellow; */
 }
 /* ????? */
 
