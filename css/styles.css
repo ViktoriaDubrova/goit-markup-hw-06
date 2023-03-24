@@ -554,9 +554,10 @@ margin-bottom: 16px;
 }
 
 .subscribe-label {
+
     color: #FFFFFF;
     resize: none;
-    padding: 0;
+    padding-left: 16px;
     border: 1px solid var(--hero-title-text-color);
 }
 
@@ -565,7 +566,7 @@ margin-bottom: 16px;
 }
 
 .subscribe-label::placeholder {
-    print-color-adjust: var(--hero-title-text-color);
+    color: var(--hero-title-text-color);
 }
 
 .subscribe-btn {
