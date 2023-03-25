@@ -934,6 +934,7 @@ margin-bottom: 16px;
 
 .policy {
     text-decoration: underline;
+    padding-left: 4px;
 }
 
 /* .form-check {
