@@ -180,10 +180,6 @@ a, li {
     bottom: -3px;
 }
 
-/* .item-nav:hover::after {
-    opacity: 1;
-} */
-
 .mail-tel {
     font-style: normal;
     color: var(--description-tel-mail-color);
@@ -570,14 +566,14 @@ margin-bottom: 16px;
 }
 
 .subscribe-btn {
-    position: absolute;
+    /* position: absolute; */
     min-width: 165px;
     max-height: 40px;
     text-decoration: none;
     display: inline-flex;
     background-color: var(--color-link);
     align-items: center;
-    margin-left: 288px;
+    margin-left: 24px;
 }
 
 .subscribe-btn::after {
@@ -622,7 +618,7 @@ margin-bottom: 16px;
     cursor: pointer;
     font-family: inherit;
     justify-content: center;
-    gap: 24px;
+    gap: 16px;
     transition: background-color var(--transition-duration);
 }
 
@@ -820,6 +816,7 @@ margin-bottom: 16px;
     display: block;
     position: relative;
     margin: 0;
+    margin-top: 8px;
 }
 
 .form-control {
@@ -831,7 +828,6 @@ margin-bottom: 16px;
     letter-spacing: 0.04em;
     color: #8E8F99;
     margin-bottom: 4px;
-    margin-top: 8px;
 }
 
 .form-input {
@@ -842,7 +838,6 @@ margin-bottom: 16px;
     outline: transparent;
     padding-left: 38px;
     transition: border var(--transition-duration);
-    transition: color var(--transition-duration);
 }
 
 .form-input:focus + .form-icon {
@@ -850,7 +845,6 @@ margin-bottom: 16px;
 }
 
 .form-input:focus {
-    color: var(--color-link);
     border: 1px solid #4D5AE5;
 }
 
@@ -922,10 +916,12 @@ margin-bottom: 16px;
 
 .form-icon {
     position: absolute;
-    top: 50%;
+    top: 70%;
     left: 19px;
     fill: currentColor;
     transition: fill var(--transition-duration);
+    transition: color var(--transition-duration);
+    transform: translateY(-70%);
 }
 
 .accept {
