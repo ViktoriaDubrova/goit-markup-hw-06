@@ -546,11 +546,9 @@ margin-bottom: 16px;
     background-color: var(--brand-color);
     border: 1px solid #FFFFFF;
     border-radius: 4px;
-
 }
 
 .subscribe-label {
-
     color: #FFFFFF;
     resize: none;
     padding-left: 16px;
@@ -580,22 +578,16 @@ margin-bottom: 16px;
     content: "";
     display: inline-block;
     width: 24px;
-    height: 24px;
+    height: 20px;
     background-image: url(../images/icons.svg/send.svg);
     background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .subscribe-container {
-
     display: flex;
 
     /* outline: 2px solid yellow; */
-}
-/* ????? */
-
-.footer-label {
-    border-color: #FFFFFF;
-    margin: 0;
 }
 
 /* ---  BTN SECTION  --- */
@@ -739,11 +731,9 @@ margin-bottom: 16px;
     position: fixed;
     top: 0;
     left: 0;
-    /* z-index: 100; */
     width: 100%;
     height: 100%;
     background-color: rgba(46, 47, 66, 0.4);
-
     transition: opacity var(--transition-duration),
                 visibility var(--transition-duration);
 }
@@ -756,7 +746,6 @@ margin-bottom: 16px;
 
 .modal {
     position: absolute;
-
     display: flex;
     flex-direction: column;
     padding: 24px;
@@ -764,7 +753,6 @@ margin-bottom: 16px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
     width: 408px;
     height: 584px;
     background-color: #FCFCFC;
@@ -775,18 +763,14 @@ margin-bottom: 16px;
     display: flex; 
     align-items: center; 
     justify-content: center;
-
     top: 24px;
     right: 24px;
-
     width: 24px;
     height: 24px;
-    border-radius: 50%;
-  
+    border-radius: 50%; 
     background-color: #e7e9fc;
     border: 1px solid rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-  
+    cursor: pointer; 
     transition: background-color var(--transition-duration);
 }
 
@@ -816,7 +800,16 @@ margin-bottom: 16px;
     display: block;
     position: relative;
     margin: 0;
-    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.for-label:last-child {
+    margin-bottom: 0;
+  }
+  
+.footer-label {
+    border-color: #FFFFFF;
+    margin: 0;
 }
 
 .form-control {
@@ -837,7 +830,7 @@ margin-bottom: 16px;
     border-radius: 4px;
     outline: transparent;
     padding-left: 38px;
-    transition: border var(--transition-duration);
+    transition: border-color var(--transition-duration);
 }
 
 .form-input:focus + .form-icon {
@@ -845,7 +838,7 @@ margin-bottom: 16px;
 }
 
 .form-input:focus {
-    border: 1px solid #4D5AE5;
+    border-color: #4D5AE5;
 }
 
 .form-icon:focus,
@@ -919,7 +912,6 @@ margin-bottom: 16px;
     top: 70%;
     left: 19px;
     fill: currentColor;
-    transition: fill var(--transition-duration);
     transition: color var(--transition-duration);
     transform: translateY(-70%);
 }
@@ -932,8 +924,3 @@ margin-bottom: 16px;
     text-decoration: underline;
     padding-left: 4px;
 }
-
-/* .form-check {
-    width: 16px;
-    height: 16px;
-} */
